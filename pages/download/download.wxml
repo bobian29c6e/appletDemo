@@ -1,0 +1,14 @@
+<!--pages/download/download.wxml-->
+<view class="input-view">
+    <input class="input-name" placeholder="请输入姓名" bindinput="inputName" />
+    <view class="input-birthday">
+        <text>选择出生日期：</text>
+        <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+            <text class="input-birthday-text" >{{date}}</text>
+        </picker>
+    </view>
+    <input class="input-phone-num" placeholder="请输入手机号" bindinput="inputPhoneNum" />
+</view>
+
+<!-- 下载按钮，将用户的姓名，出生日期，手机号上传至服务器后下载文件 -->
+<button class="download-btn" bindtap="downloadFile">下载</button>

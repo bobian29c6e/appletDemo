@@ -1,0 +1,23 @@
+<!-- 将‘image’内的三张图片设置为轮播图 -->
+<swiper class="activity" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+<block wx:for="{{imgUrls}}">
+    <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" height="100%"/>
+    </swiper-item>
+</block>
+</swiper>
+
+<!-- 设置输入框，用于用户输入姓名，设置picker用于用户选择自己的出生日期，默认从现在的日期开始选 -->
+<view class="input-view">
+    <input class="input-name" placeholder="请输入姓名" bindinput="inputName" />
+    <view class="input-birthday">
+        <text>选择出生日期：</text>
+        <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+            <text class="input-birthday-text" >{{date}}</text>
+        </picker>
+    </view>
+    <input class="input-phone-num" placeholder="请输入手机号" bindinput="inputPhoneNum" />
+</view>
+
+<!-- 确认按钮，将用户的姓名，出生日期 -->
+<button class="button" bindtap="confirm">确认</button>

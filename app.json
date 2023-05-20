@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/user/user",
+    "pages/download/download",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#f7f7f7",
+    "list": [
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "登记"
+      },
+
+      {
+        "pagePath": "pages/download/download",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "下载"
+      }
+    ]
+  },
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
